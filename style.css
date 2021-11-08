@@ -1,0 +1,435 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* NavigationBar style start */
+#nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar-nav{
+    margin-left: auto;
+}
+/* .navbar-brand{
+    height: 40px;
+    padding-left: 30px;
+} */
+.navbar-nav li{
+    padding: 0 10px;
+}
+.navbar-nav li a{
+    float: right;
+    text-align: left;
+}
+#nav-bar ul li a:hover{
+    color: #007bff !important;
+}
+.navbar{
+    background: #fff;
+}
+.navbar-toggler{
+    border: none !important;
+}
+.nav-link{
+    color: #555 !important;
+    font-weight: bold;
+    font-size: 18px;
+}
+.navbar-nav li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #007bff;
+    display: block;
+    margin: auto;
+    margin: auto;
+    transition: 0.5s;
+}
+.navbar-nav li a:hover::after{
+    width: 100%;
+}
+/* NavigationBar style finish */
+
+/* Slider style start */
+#slider{
+   width: 100%; 
+}
+.carousel-caption{
+    top: 50%;
+    transform: translateY(-50%);
+}
+.carousel-caption h5{
+    color: rgb(23, 253, 242);
+    font-size: 42px;
+}
+/* Slider style finish */
+/* About style Start */
+#about{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #555;
+}
+#about .btn{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.about-content{
+    padding-top: 20px;
+}
+.skills-bar p{
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+.progress-bar{
+    border-radius: 16px;
+}
+.progress{
+    border-radius: 16px!important; 
+    margin-bottom: 20px;
+}
+/* About style finish */
+/* Services style start */
+.services{
+    background-image: linear-gradient(rgba(26, 32, 39, 0.7),rgba(28, 33, 44, 0.7)),url(images/services.jfif);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    color: #efefef !important;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+#services h1{
+    text-align: center;
+    color: #efefef !important;
+    padding-bottom: 10px;
+}
+/* .services h1::after{
+    content: '';
+    background: #efefef;
+    display: block;
+    height: 3px;
+    width: 200px;
+    margin: 20px auto 5px;
+} */
+/* .services{
+    margin-top: 40px;
+} */
+.services p{
+    margin: 20px;
+}
+.icon{
+    font-size: 40px;
+    margin: 20px auto;
+    padding: 20px;
+    height: 80px;
+    width: 80px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+/* .services p{
+    font-size: 14px;
+    margin-top: 20px;
+    color: #ccc;
+} */
+.services .col-md-3:hover{
+    background: #007bff;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: 0.7s;
+}
+/* .text-center{
+    margin-bottom: 50px;
+} */
+/* Services style finish */
+
+/* Team Members style start  */
+#team{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #555;
+}
+h1{
+    text-align: center;
+    color: #555;
+    padding-bottom: 10px;
+}
+h1::after{
+    content: '';
+    background: #007bff;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}
+.profile-pic{
+   margin-top: 25px; 
+}
+.profile-pic .img-box{
+      opacity: 1;
+      display: block;
+      position: relative;
+}
+.profile-pic .img-box img{
+      filter: grayscale(1);
+}
+.profile-pic .img-box img:hover{
+      filter: grayscale(0);
+      cursor: pointer;
+}
+.profile-pic h2{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #007bff;
+}
+.profile-pic h3{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;  
+}
+#team .fa{
+    height: 25px;
+    width: 25px;
+    color: #007bff;
+    background: #fff;
+    padding: 4px;
+    border-radius: 50%;
+}
+.img-responsive{
+    width: 100%;
+    border-radius: 10px;
+}
+.img-box ul{
+    padding: 15px 0;
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-100%);
+    opacity: 0;
+}
+.img-box ul li{
+    padding: 5px;
+    display: inline-block;
+}
+.img-box:hover ul{
+    opacity: 1;
+}
+.img-box ul, .img-box ul li{
+    transition: 0.5s;
+}
+/* Team Members style finish */
+/* promo section style start  */
+#promo{
+    background-image: linear-gradient(rgba(26, 32, 39, 0.7),rgba(28, 33, 44, 0.7)),url(images/services.jfif);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 100px;
+    font-family: sans-serif;
+    font-size: 38px;
+}
+/* promo section style finish */
+/* Price Plan style start */
+#price{
+    padding: 40px 0;
+    background: #efefef;
+}
+.single-price{
+    margin: 10px auto;
+    display: inline;
+    float: left;
+    width: 100%;
+    background-color: #fff;
+    transition: 0.5s;
+}
+.single-price:hover{
+    box-shadow: 0 2px 20px #333;
+}
+.price-head{
+    background-color: #2196f3;
+    display: inline;
+    float: left;
+    padding: 10px 5px;
+    text-align: center;
+    width: 100%;
+}
+.price-head h2{
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding: 5px;
+    text-transform: uppercase;
+}
+.price-head p{
+    font-size: 25px;
+    color: #ccc;
+    font-weight: bold;
+    line-height: 30px;
+}
+#price span{
+    font-size: 15px;
+}
+.price-content{
+    display: inline;
+    float: left;
+    width: 100%;
+    padding: 0 15px; 
+}
+.price-content ul li{
+    border-bottom: 1px solid #efefef;
+    padding: 15px 10px;
+    list-style: none;
+}
+/* ul li:last-child{
+    border: none;
+} */
+.fa-check-circle{
+    color: green;
+    margin-right: 10px;
+    font-size: 20px;
+}
+.fa-times-circle{
+    color: red;
+    margin-right: 10px;
+    font-size: 20px;
+}
+.price-button{
+    display: inline;
+    float: left;
+    padding: 15px 15px 30px;
+    text-align: center;
+    width: 100%;
+}
+.buy-btn{
+    background-color: #2196f3;
+    /* color: white; */
+    font-weight: bold;
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 18px;
+    padding: 15px 50px;
+    transition: 0.5s;
+}
+.buy-btn:hover{
+    border-color: 1px solid #fff;
+    background-color: #3f51b5;
+}
+a{
+    text-decoration: none !important;
+    color: #fff !important;
+}
+/* Price Plan style finish */
+/* Testimonials style start */
+#testimonials{
+    padding-top: 50px;
+    padding-bottom: 50px; 
+}
+#testimonials .row{
+    margin-top: 30px;
+}
+.col-md-4{
+    margin: 40px auto;
+}
+.profile{
+    padding: 40px 20px 10px;
+    background-color: #efefef;
+}
+.user{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+.profile img{
+    /* top: -60px; */
+    /* position: absolute; */
+    /* left: calc(50% -60px); */
+    border: 10px solid #fff;
+}
+.profile h3{
+    font-size: 25px;
+    margin-top: 15px;
+    color: #2196f3;
+}
+#testimonials span{
+    font-size: 14px;
+    line-height: #333;
+    color: #333;
+}
+
+blockquote{
+    font-size: 16px;
+    line-height: 30px;
+}
+/* blockquote::before{
+    content: '\93';
+    font-size: 50px;
+    color: #007bff;
+    position: relative;
+    line-height: 20px;
+    bottom: -15px;
+    right: 5px;
+} */
+/* blockquote::after{
+    content: '\94';
+    font-size: 50px;
+    color: #007bff;
+    position: relative;
+    line-height: 20px;
+    bottom: -15px;
+    left: 5px;
+} */
+.profile:hover{
+    box-shadow: 0 0 15px 5px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: 0.5s;
+}
+/* Testimonials style finish */
+/* Get in Touch style start */
+#contact{
+    background: #efefef;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: #777;
+}
+/* .contact-form{
+    padding: 15px;
+} */
+.form-group{
+    margin-bottom: 7px;
+}
+.form-control{
+    border-radius: 0 !important;
+    border: none !important;
+}
+::placeholderf{
+    color: #999 !important;
+}
+.follow{
+    background: #fff;
+    padding: 10px;
+    margin: 15px;
+}
+.contact-info .fa{
+    margin: 10px;
+    color: #007bff;
+    font-weight: bold;
+}
+/* Get in Touch style finish */
+/* Footer style start  */
+#footer{
+    background: #333;
+    color: #fff;
+    padding: 12px;
+}
+.fa-heart-o{
+    margin: 3px;
+    color: red;
+}
+/* Footer style finish */
